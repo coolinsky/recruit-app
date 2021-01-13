@@ -1,4 +1,4 @@
-package main.java.stringOperations;
+package stringOperations;
 
 public class ReverseString {
 
@@ -9,7 +9,7 @@ public class ReverseString {
         if (str.length() == 1) {
             return str;
         }
-        return str.charAt(0) + reverseString(str.substring(1, str.length()-1));
+        return  reverseString(str.substring(1)) + str.charAt(0);
     }
 
 }
